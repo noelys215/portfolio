@@ -6,7 +6,7 @@ import Section from '../../components/section';
 import Paragraph from '../../components/paragraph';
 
 const Work = () => (
-	<Layout title="Gloria Fútbol">
+	<Layout title="Atalanta A.C.">
 		<Container maxW="3xl">
 			<Title>
 				Atalanta A.C. <Badge>2022</Badge>
