@@ -6,9 +6,6 @@ import { WorkGridItem, GridItem } from '../components/grid-item';
 import gloriaThumb from '../public/images/works/gloria4.png';
 import atalantaThumb from '../public/images/works/atalanta1.png';
 import roshambo from '../public/images/works/roshambo.png';
-// import thumbWalknote from '../public/images/works/walknote_eyecatch.png';
-
-// import thumbAmembo from '../public/images/works/amembo_eyecatch.png';
 
 const Works = () => (
 	<Layout title="Works">

@@ -66,7 +66,7 @@ const Page = () => {
 						<br />
 						<br />
 						I primarily enjoy trying to make minimal, visually appealing and simple to
-						navigate web apps;experimenting with different technologies and libraries,
+						navigate web apps; experimenting with different technologies and libraries,
 						while keeping the code as simple and readable as possible.
 						<br />
 						<br />
