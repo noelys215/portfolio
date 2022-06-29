@@ -18,7 +18,7 @@ import Section from '../components/section';
 import Paragraph from '../components/paragraph';
 import { WorkGridItem } from '../components/grid-item';
 
-import { IoLogoInstagram, IoLogoGithub } from 'react-icons/io5';
+import { IoMailOutline, IoLogoGithub } from 'react-icons/io5';
 import thumbGloria from '../public/images/gloria.png';
 import thumbAtalanta from '../public/images/atalanta.png';
 
@@ -154,7 +154,7 @@ const Page = () => {
 								as={Link}
 								variant="ghost"
 								colorScheme="purple"
-								leftIcon={<Icon as={IoLogoInstagram} />}
+								leftIcon={<Icon as={IoMailOutline} />}
 								href={`mailto:noelys215@gmail.com?subject=${
 									encodeURIComponent('Hello Henry!') || ''
 								}&body=${encodeURIComponent('words and sentences') || ''}`}>
