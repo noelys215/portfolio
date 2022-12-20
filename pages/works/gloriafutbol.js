@@ -15,7 +15,7 @@ const Work = () => (
 			<List ml={4} my={4}>
 				<ListItem>
 					<Meta>Stack</Meta>
-					<span>React, JavaScript, RTK Query, SportsAPI, Material UI</span>
+					<span>React | JavaScript | RTK Query | SportsAPI | Material UI</span>
 				</ListItem>
 				<ListItem>
 					<Meta>Visit</Meta>

@@ -11,22 +11,30 @@ const Work = () => (
 			<Title>
 				Atalanta A.C. <Badge>2022</Badge>
 			</Title>
-			<P>A semi-modern athletic clothing e-commerce store.</P>
 			<List ml={4} my={4}>
 				<ListItem>
 					<Meta>Stack</Meta>
-					<span>NextJs, JavaScript, TypeScript, Groq, Sanity.io,PayPal, Material UI</span>
+					<span>
+						NextJs | JavaScript | TypeScript | Node/Express | MongoDB/Atlas | PayPal
+						<br /> Material UI | Redux Toolkit | Docker | AWS EC2
+					</span>
 				</ListItem>
 				<ListItem>
 					<Meta>Visit</Meta>
-					<Link href="https://atalanta-three.vercel.app/" target={'_blank'}>
+					<Link href="http://atalanta.world/" target={'_blank'}>
 						Atalanta A.C.
 					</Link>
 				</ListItem>
 				<ListItem>
-					<Meta>Code</Meta>
-					<Link href="https://github.com/noelys215/atalanta" target={'_blank'}>
-						GitHub - Atalanta A.C.
+					<Meta>Frontend Code</Meta>
+					<Link href="https://github.com/noelys215/atalanta_frontend" target={'_blank'}>
+						GitHub - Atalanta A.C. | Frontend
+					</Link>
+				</ListItem>
+				<ListItem>
+					<Meta>Backend Code</Meta>
+					<Link href="https://github.com/noelys215/atalanta_backend" target={'_blank'}>
+						GitHub - Atalanta A.C. | Backend
 					</Link>
 				</ListItem>
 			</List>
@@ -36,19 +44,51 @@ const Work = () => (
 					<Center>README</Center>
 				</Heading>
 				<Paragraph>
-					Atalanta A.C. (Athletics Club) is an ambitious attempt to create a complete
+					Atalanta A.C. (Athletic Club) is an ambitious attempt to create a complete
 					modern e-commerce clothing and accessory store for athletes; with user
 					authentication.
 					<br />
 					<br />
-					With the help of Sanity.io, a headless CMS/Content management system, I was able
-					to easily create a backend to manage, fetch and update different pieces of
-					clothing, shoes and accessories.
+					Backend:
+					<br />
+					- The backend is built on Node.js with the express framework connected to the
+					MongoDB Atlas cloud which collects, registers and updates the data on users,
+					products, and orders.
+					<br />
+					- This includes an admin protected route that can access sensitive information
+					on users as well create/edit products, edit user info, and mark orders as
+					shipped.
+					<br />
+					- Moreover, Using Cloudinary&apos;s SDK, images and videos are uploaded to its
+					cloud servers, rather than being stored in the production code.
 					<br />
 					<br />
-					Using React Context and form validation, users are able to create and manage
-					their own account, and use this saved information (Cookies) to checkout via
-					their debit/credit cards or PayPal account.
+					Frontend:
+					<br />
+					- The frontend is built on Next.js, a React framework, using its various
+					pre-rendering techniques to render the HTML in advance on a server, instead dof
+					having it done on the client side, avoiding blank loading pages.
+					<br />
+					- The application uses ISR (Incremental Static Regeneration) so data is readily
+					available on build time, and only gets regenerated when the backend is updated;
+					in the case of sales, price markdowns, and other content updates.
+					<br />- Redux Toolkit is used to handle state within the app as well as create
+					synchronous and asynchronous actions to the express backend such as
+					creating/placing orders, users, retrieving data and more.
+					<br />
+					<br />
+					Hosting:
+					<br />
+					- The application practices the CI/CD method to deploy any changes to the AWS
+					ec2 instance in the cloud.
+					<br />
+					- With Github Actions, the Dockerfile runs Next.js build script, and if the
+					build completes without error, the script proceeds to run a docker build script
+					in the AWS EC2 shell, which pulls the latest docker image and runs on the
+					server.
+					<br />- Redux Toolkit is used to handle state within the app as well as create
+					synchronous and asynchronous actions to the express backend such as
+					creating/placing orders, users, retrieving data and more.
 				</Paragraph>
 			</Section>
 
@@ -57,27 +97,24 @@ const Work = () => (
 					<Center>Room for Improvements</Center>
 				</Heading>
 				<Paragraph>
-					This was my first attempt at creating a Next JS website and learning to use the
-					Sanity.io platform, so the experience was rather new and raw. I noticed that
-					SSR(Server Side Rendering) was not the optimal choice for fetching the data from
-					the backend; which causes data to load slower than anticipated.
+					Atalanta is a learning project, used to learn and practice new technologies and
+					concepts.
 					<br />
+					In future updates, the website will include SMS and Email confirmations, support
+					chatbot,as well as a simpler checkout system.
 					<br />
-					In future updates, the website will be revamped using ISR (Incremental Static
-					Regeneration) so data is readily available on build time, and only gets
-					regenerated when the backend is updated; in the case of sales, price markdowns,
-					and other content updates. As well as creating more reusable code and templates
-					for products, to reduce the unneeded bloat.
 				</Paragraph>
 			</Section>
 
-			<WorkImage src="/images/works/atalanta7.png" alt="atalanta" />
 			<WorkImage src="/images/works/atalanta1.png" alt="atalanta" />
 			<WorkImage src="/images/works/atalanta3.png" alt="atalanta" />
 			<WorkImage src="/images/works/atalanta5.png" alt="atalanta" />
 			<WorkImage src="/images/works/atalanta6.png" alt="atalanta" />
 			<WorkImage src="/images/works/atalanta4.png" alt="atalanta" />
 			<WorkImage src="/images/works/atalanta2.png" alt="atalanta" />
+			<WorkImage src="/images/works/product_edit.jpg" alt="atalanta" />
+			<WorkImage src="/images/works/productslist.jpg" alt="atalanta" />
+			<WorkImage src="/images/works/userslist.jpg" alt="atalanta" />
 		</Container>
 	</Layout>
 );
