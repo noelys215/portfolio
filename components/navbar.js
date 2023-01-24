@@ -17,6 +17,7 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons';
 import ThemeToggleButton from './theme-toggle-button';
 import { IoLogoGithub } from 'react-icons/io5';
+import { IoLogoLinkedin } from 'react-icons/io5';
 
 const LinkItem = ({ href, path, _target, children, ...props }) => {
 	const active = path === href;
@@ -61,6 +62,7 @@ const Navbar = (props) => {
 					</Heading>
 				</Flex>
 
+				{/* Desktop Nav */}
 				<Stack
 					direction={{ base: 'column', md: 'row' }}
 					display={{ base: 'none', md: 'flex' }}
@@ -82,8 +84,20 @@ const Navbar = (props) => {
 						<IoLogoGithub />
 						GitHub
 					</LinkItem>
+					<LinkItem
+						target="_blank"
+						href="https://www.linkedin.com/in/henry-betancourth/"
+						path={path}
+						display="inline-flex"
+						alignItems="center"
+						style={{ gap: 4 }}
+						pl={2}>
+						<IoLogoLinkedin />
+						Linkedin
+					</LinkItem>
 				</Stack>
 
+				{/* Mobile Nav */}
 				<Box flex={1} align="right">
 					<ThemeToggleButton />
 
@@ -104,6 +118,11 @@ const Navbar = (props) => {
 								</NextLink>
 								<MenuItem as={Link} href="https://github.com/noelys215">
 									GitHub
+								</MenuItem>
+								<MenuItem
+									as={Link}
+									href="https://www.linkedin.com/in/henry-betancourth/">
+									Linkedin
 								</MenuItem>
 							</MenuList>
 						</Menu>

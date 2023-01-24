@@ -11,6 +11,8 @@ import {
 	ListItem,
 	List,
 	Icon,
+	GridItem,
+	Grid,
 } from '@chakra-ui/react';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import Layout from '../components/layouts/article';
@@ -23,6 +25,20 @@ import thumbGloria from '../public/images/gloria.png';
 import thumbAtalanta from '../public/images/atalanta.png';
 
 const Page = () => {
+	const skills = [
+		'Javascript',
+		'React.js',
+		'Next.js',
+		'Typescript',
+		'Node.js',
+		'Express.js',
+		'CSS',
+		'HTML',
+		'Git',
+		'Redux / Toolkit',
+		'CI/CD',
+		'MongoDB',
+	];
 	return (
 		<Layout>
 			<Container maxW="3xl">
@@ -105,6 +121,22 @@ const Page = () => {
 					</BioSection>
 				</Section> */}
 
+				{/* Skills Section */}
+				<Section delay={0.3}>
+					<Heading as="h3" variant="section-title">
+						Skills
+					</Heading>
+
+					<Grid templateColumns="repeat(8, 1fr)" gap={1.5}>
+						{skills.map((skill) => (
+							<GridItem textAlign={'center'} colSpan={{ base: 4, sm: 2 }} key={skill}>
+								{skill}
+							</GridItem>
+						))}
+					</Grid>
+				</Section>
+
+				{/* Hobbies  */}
 				<Section delay={0.3}>
 					<Heading as="h3" variant="section-title">
 						I ♥
@@ -119,6 +151,7 @@ const Page = () => {
 					</Paragraph>
 				</Section>
 
+				{/* Featured Section */}
 				<Section delay={0.3}>
 					<Heading as="h3" variant="section-title">
 						Featured Works
@@ -138,7 +171,7 @@ const Page = () => {
 					</SimpleGrid>
 
 					<List display={'flex'} justifyContent={'center'} marginTop={3}>
-						<ListItem>
+						{/* <ListItem>
 							<Link href="https://github.com/noelys215" target="_blank">
 								<Button
 									variant="ghost"
@@ -147,7 +180,7 @@ const Page = () => {
 									@noelys215
 								</Button>
 							</Link>
-						</ListItem>
+						</ListItem> */}
 
 						<ListItem>
 							<Button
