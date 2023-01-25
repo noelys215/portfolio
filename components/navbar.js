@@ -18,6 +18,8 @@ import { HamburgerIcon } from '@chakra-ui/icons';
 import ThemeToggleButton from './theme-toggle-button';
 import { IoLogoGithub } from 'react-icons/io5';
 import { IoLogoLinkedin } from 'react-icons/io5';
+// Google Analytics
+import ReactGA from 'react-ga';
 
 const LinkItem = ({ href, path, _target, children, ...props }) => {
 	const active = path === href;
@@ -39,6 +41,14 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
 
 const Navbar = (props) => {
 	const { path } = props;
+
+	// Track If User Clicked Works
+	const clickedWorks = () => {
+		ReactGA.event({
+			category: 'Works',
+			action: 'User clicked works',
+		});
+	};
 
 	return (
 		<Box
@@ -70,7 +80,7 @@ const Navbar = (props) => {
 					alignItems="center"
 					flexGrow={1}
 					mt={{ base: 4, md: 0 }}>
-					<LinkItem href="/works" path={path}>
+					<LinkItem onClick={clickedWorks} href="/works" path={path}>
 						Works
 					</LinkItem>
 					<LinkItem
@@ -114,7 +124,9 @@ const Navbar = (props) => {
 									<MenuItem as={Link}>About</MenuItem>
 								</NextLink>
 								<NextLink href="/works" passHref>
-									<MenuItem as={Link}>Works</MenuItem>
+									<MenuItem onClick={clickedWorks} as={Link}>
+										Works
+									</MenuItem>
 								</NextLink>
 								<MenuItem as={Link} href="https://github.com/noelys215">
 									GitHub

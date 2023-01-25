@@ -23,8 +23,26 @@ import { WorkGridItem } from '../components/grid-item';
 import { IoMailOutline, IoLogoGithub } from 'react-icons/io5';
 import thumbGloria from '../public/images/gloria.png';
 import thumbAtalanta from '../public/images/atalanta.png';
+// Google Analytics
+import ReactGA from 'react-ga';
+import { useEffect } from 'react';
+const TRACKING_ID = 'UA-226134935-1';
+ReactGA.initialize(TRACKING_ID);
 
 const Page = () => {
+	// Checks if user landed on home page
+	useEffect(() => {
+		ReactGA.pageview(window.location.pathname);
+	}, []);
+
+	// Track If User Clicked Portfolio
+	const clickedPortfolio = () => {
+		ReactGA.event({
+			category: 'Portfolio',
+			action: 'User clicked portfolio',
+		});
+	};
+
 	const skills = [
 		'Javascript',
 		'React.js',
@@ -92,7 +110,10 @@ const Page = () => {
 					</Paragraph>
 					<Box align="center" my={4}>
 						<NextLink href="/works">
-							<Button rightIcon={<ChevronRightIcon />} colorScheme="purple">
+							<Button
+								onClick={clickedPortfolio}
+								rightIcon={<ChevronRightIcon />}
+								colorScheme="purple">
 								My portfolio
 							</Button>
 						</NextLink>
