@@ -14,13 +14,13 @@ body {
 }
 
 .swiper-slide {
-	text-align: center;
-	font-size: 18px;
-	background: #fff;
+	/* height: 110% !important; */
+	/* background: #fff; */
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 1.1rem;
 }
 
 .swiper-slide img {
@@ -31,7 +31,12 @@ body {
 }
 
 span.swiper-pagination-bullet.swiper-pagination-bullet-active {
-	background-color: #81e6d9;
+	background-color: #ff63c3;
+	/* width: 2rem; */
+	/* height: 2rem; */
+}
+span.swiper-pagination-bullet.swiper-pagination-bullet {
+	background-color: #ff63c3;
 	/* width: 2rem; */
 	/* height: 2rem; */
 }
