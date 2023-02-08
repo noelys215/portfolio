@@ -4,6 +4,17 @@ import P from '../../components/paragraph';
 import Layout from '../../components/layouts/article';
 import Section from '../../components/section';
 import Paragraph from '../../components/paragraph';
+import { Slider } from '../../components/slider';
+
+const imageArr = [
+	{
+		src: '/images/works/gloria1.png',
+		alt: 'gloria',
+	},
+	{ src: '/images/works/gloria2.png', alt: 'gloria' },
+	{ src: '/images/works/gloria3.png', alt: 'gloria' },
+	{ src: '/images/works/gloria4.png', alt: 'gloria' },
+];
 
 const Work = () => (
 	<Layout title="Gloria Fútbol">
@@ -68,10 +79,8 @@ const Work = () => (
 				</Paragraph>
 			</Section>
 
-			<WorkImage src="/images/works/gloria1.png" alt="gloria" />
-			<WorkImage src="/images/works/gloria2.png" alt="gloria" />
-			<WorkImage src="/images/works/gloria3.png" alt="gloria" />
-			<WorkImage src="/images/works/gloria4.png" alt="gloria" />
+			{/* Image Slider */}
+			<Slider array={imageArr} />
 		</Container>
 	</Layout>
 );

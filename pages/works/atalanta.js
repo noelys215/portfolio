@@ -1,9 +1,29 @@
-import { Box, Container, Badge, Link, List, ListItem, Heading, Center } from '@chakra-ui/react';
+import { Container, Badge, Link, List, ListItem, Heading, Center } from '@chakra-ui/react';
 import { Title, WorkImage, Meta } from '../../components/work';
 import P from '../../components/paragraph';
 import Layout from '../../components/layouts/article';
 import Section from '../../components/section';
 import Paragraph from '../../components/paragraph';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Navigation } from 'swiper';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Slider } from '../../components/slider';
+
+const imageArr = [
+	{ src: '/images/works/atalanta1.png', alt: 'atalanta' },
+	{ src: '/images/works/atalanta2.png', alt: 'atalanta' },
+	{ src: '/images/works/atalanta3.png', alt: 'atalanta' },
+	{ src: '/images/works/atalanta4.png', alt: 'atalanta' },
+	{ src: '/images/works/atalanta5.png', alt: 'atalanta' },
+	{ src: '/images/works/atalanta6.png', alt: 'atalanta' },
+	{ src: '/images/works/atalanta7.png', alt: 'atalanta' },
+	{ src: '/images/works/product_edit.jpg', alt: 'atalanta' },
+	{ src: '/images/works/productslist.jpg', alt: 'atalanta' },
+	{ src: '/images/works/userslist.jpg', alt: 'atalanta' },
+];
 
 const Work = () => (
 	<Layout title="Atalanta A.C.">
@@ -106,15 +126,8 @@ const Work = () => (
 				</Paragraph>
 			</Section>
 
-			<WorkImage src="/images/works/atalanta1.png" alt="atalanta" />
-			<WorkImage src="/images/works/atalanta3.png" alt="atalanta" />
-			<WorkImage src="/images/works/atalanta5.png" alt="atalanta" />
-			<WorkImage src="/images/works/atalanta6.png" alt="atalanta" />
-			<WorkImage src="/images/works/atalanta4.png" alt="atalanta" />
-			<WorkImage src="/images/works/atalanta2.png" alt="atalanta" />
-			<WorkImage src="/images/works/product_edit.jpg" alt="atalanta" />
-			<WorkImage src="/images/works/productslist.jpg" alt="atalanta" />
-			<WorkImage src="/images/works/userslist.jpg" alt="atalanta" />
+			{/* Image Slider */}
+			<Slider array={imageArr} />
 		</Container>
 	</Layout>
 );
