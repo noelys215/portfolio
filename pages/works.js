@@ -6,6 +6,7 @@ import { WorkGridItem, GridItem } from '../components/grid-item';
 import gloriaThumb from '../public/images/works/gloria4.png';
 import atalantaThumb from '../public/images/works/atalanta1.png';
 import roshambo from '../public/images/works/roshambo.png';
+import CalcPer from '../public/images/works/CalcPer.png';
 
 const Works = () => (
 	<Layout title="Works">
@@ -31,6 +32,14 @@ const Works = () => (
 						title="Ro-Sham-Bo"
 						thumbnail={roshambo}>
 						A fun little rock-paper-scissor-spock game.
+					</GridItem>
+				</Section>
+				<Section>
+					<GridItem
+						href="https://coupon-henna.vercel.app/"
+						title="Percentage Calculator"
+						thumbnail={CalcPer}>
+						Coupon Percentage Calculator
 					</GridItem>
 				</Section>
 			</SimpleGrid>

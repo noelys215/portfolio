@@ -45,17 +45,17 @@ const Page = () => {
 
 	const skills = [
 		'Javascript',
-		'React.js',
-		'Next.js',
+		'React/Next.js',
+		'Docker',
 		'Typescript',
 		'Node.js',
 		'Express.js',
-		'CSS',
-		'HTML',
+		'AWS Cloud Suite',
+		'HTML/CSS',
 		'Git',
 		'Redux / Toolkit',
 		'CI/CD',
-		'MongoDB',
+		'NoSQL & MySQL',
 	];
 	return (
 		<Layout>
