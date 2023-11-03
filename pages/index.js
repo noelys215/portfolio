@@ -95,18 +95,26 @@ const Page = () => {
 						Work
 					</Heading>
 					<Paragraph>
-						Hello, I&apos;m a self motivated frontend focused developer based in
-						Southern New Jersey.
-						<br />
-						<br />
-						I primarily enjoy trying to make minimal, visually appealing and simple to
-						navigate web apps; experimenting with different technologies and libraries,
-						while keeping the code as simple and readable as possible.
-						<br />
-						<br />
-						Although I primarily work with JavaScript and React/Next, I have a passion
-						for learning different technologies and services to expand my knowledge and
-						keep up with latest trends.
+						Hiya! I&apos;m a self motivated frontend focused developer based in Southern
+						New Jersey.
+					</Paragraph>
+					<br />
+					<Paragraph>
+						I take great pleasure in designing websites that are not only easy on the
+						eyes but also a breeze to use. I’m all about simplicity – in both design and
+						code.
+					</Paragraph>
+					<br />
+					<Paragraph>
+						JavaScript is my go-to, and I’ve got a good handle on React and Next.js, but
+						I’m always on the lookout for new tech to master. Staying current and
+						expanding my skill set is something I’m passionate about.
+					</Paragraph>
+					<br />
+					<Paragraph>
+						I invite you to click around and explore my website to see the projects and
+						work that I&apos;m most proud of. I hope you&apos;ll find the creativity and
+						precision in my work as exciting as I do.
 					</Paragraph>
 					<Box align="center" my={4}>
 						<NextLink href="/works">
