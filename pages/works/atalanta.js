@@ -41,7 +41,7 @@ const Work = () => (
 				</ListItem>
 				<ListItem>
 					<Meta>Visit</Meta>
-					<Link href="http://atalanta.world/" target={'_blank'}>
+					<Link href="https://atalanta-frontend.vercel.app/" target={'_blank'}>
 						Atalanta A.C.
 					</Link>
 				</ListItem>
@@ -98,6 +98,8 @@ const Work = () => (
 					<br />
 					<br />
 					Hosting:
+					<br />
+					*CURRENTlY BEING REWORKED AS OF 1/2024*
 					<br />
 					- The application practices the CI/CD method to deploy any changes to the AWS
 					ec2 instance in the cloud.
