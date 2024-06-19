@@ -44,19 +44,20 @@ const Page = () => {
 	};
 
 	const skills = [
-		'Javascript',
+		'Java/Spring Boot',
 		'React/Next.js',
-		'Docker',
 		'Typescript',
-		'Node.js',
-		'Express.js',
+		'Javascript',
+		'Node.js & Express.js',
+		'Docker',
 		'AWS Cloud Suite',
+		'NoSQL & MySQL',
+		'CI/CD',
+		'Redux/Toolkit',
 		'HTML/CSS',
 		'Git',
-		'Redux / Toolkit',
-		'CI/CD',
-		'NoSQL & MySQL',
 	];
+
 	return (
 		<Layout>
 			<Container maxW="3xl">
@@ -95,20 +96,27 @@ const Page = () => {
 						Work
 					</Heading>
 					<Paragraph>
-						Hiya! I&apos;m a self motivated frontend focused developer based in Southern
-						New Jersey.
+						Hi there! I&apos;m a self-motivated full-stack software engineer based in
+						Southern New Jersey.
 					</Paragraph>
 					<br />
 					<Paragraph>
-						I take great pleasure in designing websites that are not only easy on the
-						eyes but also a breeze to use. I’m all about simplicity – in both design and
-						code.
+						I take great pleasure in designing websites that are not only visually
+						appealing but also easy to use. I’m all about simplicity – in both design
+						and code.
 					</Paragraph>
 					<br />
 					<Paragraph>
-						JavaScript is my go-to, and I’ve got a good handle on React and Next.js, but
-						I’m always on the lookout for new tech to master. Staying current and
-						expanding my skill set is something I’m passionate about.
+						JavaScript is my go-to language, and I have a strong grasp of React and
+						Next.js. However, I’m always on the lookout for new technologies to master.
+						Staying current and expanding my skill set is something I’m passionate
+						about.
+					</Paragraph>
+					<br />
+					<Paragraph>
+						During college, I had the opportunity to learn and work with AWS and
+						Java/Spring Boot, which has further broadened my expertise in backend
+						development and cloud services.
 					</Paragraph>
 					<br />
 					<Paragraph>
@@ -116,6 +124,7 @@ const Page = () => {
 						work that I&apos;m most proud of. I hope you&apos;ll find the creativity and
 						precision in my work as exciting as I do.
 					</Paragraph>
+
 					<Box align="center" my={4}>
 						<NextLink href="/works">
 							<Button
