@@ -5,6 +5,7 @@ import { WorkGridItem, GridItem } from '../components/grid-item';
 
 import gloriaThumb from '../public/images/works/gloria4.png';
 import atalantaThumb from '../public/images/works/atalanta1.png';
+import liftLabThumb from '../public/images/works/liftLabThumb.png';
 import roshambo from '../public/images/works/roshambo.png';
 import CalcPer from '../public/images/works/CalcPer.png';
 
@@ -24,6 +25,11 @@ const Works = () => (
 				<Section>
 					<WorkGridItem id="atalanta" title="Atalanta A.C." thumbnail={atalantaThumb}>
 						A semi-modern athletic clothing e-commerce store.
+					</WorkGridItem>
+				</Section>
+				<Section>
+					<WorkGridItem id="liftLab" title="LiftLab" thumbnail={liftLabThumb}>
+						A companion app for the Stronger by Science weightlifting program.
 					</WorkGridItem>
 				</Section>
 				<Section>
