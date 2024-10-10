@@ -25,6 +25,10 @@ const Work = () => (
 			<P>A simple soccer/fùtbol app with live scores, charts, stats, and tables.</P>
 			<List ml={4} my={4}>
 				<ListItem>
+					<Meta>Status</Meta>
+					<Badge colorScheme="green">Online</Badge>
+				</ListItem>
+				<ListItem>
 					<Meta>Stack</Meta>
 					<span>React | JavaScript | RTK Query | SportsAPI | Material UI</span>
 				</ListItem>

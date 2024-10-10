@@ -27,6 +27,10 @@ const Work = () => (
 			</Title>
 			<List ml={4} my={4}>
 				<ListItem>
+					<Meta>Status</Meta>
+					<Badge colorScheme="green">Online</Badge>
+				</ListItem>
+				<ListItem>
 					<Meta>Stack</Meta>
 					<span>
 						React | TypeScript | Vite | Material UI | Redux Toolkit | AWS | Stripe |
