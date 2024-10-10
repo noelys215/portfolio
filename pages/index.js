@@ -45,17 +45,19 @@ const Page = () => {
 
 	const skills = [
 		'Java/Spring Boot',
+		'PHP/Laravel',
 		'React/Next.js',
-		'Typescript',
-		'Javascript',
-		'Node.js & Express.js',
-		'Docker',
-		'AWS Cloud Suite',
-		'NoSQL & MySQL',
-		'CI/CD',
+		'Typescript/Javascript',
+		'Node.js/Express.js',
 		'Redux/Toolkit',
 		'HTML/CSS',
+		'NoSQL/MySQL',
+		'Docker',
+		'AWS Cloud Suite',
+		'CI/CD',
 		'Git',
+		'Agile/Scrum',
+		'Jira',
 	];
 
 	return (
@@ -75,7 +77,7 @@ const Page = () => {
 						<Heading as="h2" variant="page-title">
 							Henry Betancourth
 						</Heading>
-						<p>Digital Artisan ( Developer / Designer )</p>
+						<p>Digital Nomad | Software Engineer</p>
 					</Box>
 					<Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ md: 6 }} textAlign="center">
 						<Image
@@ -96,7 +98,7 @@ const Page = () => {
 						Work
 					</Heading>
 					<Paragraph>
-						Hi there! I&apos;m a self-motivated full-stack software engineer based in
+						Hi there! I’m a self-motivated full-stack software engineer based in
 						Southern New Jersey.
 					</Paragraph>
 					<br />
@@ -107,24 +109,24 @@ const Page = () => {
 					</Paragraph>
 					<br />
 					<Paragraph>
-						JavaScript is my go-to language, and I have a strong grasp of React and
-						Next.js. However, I’m always on the lookout for new technologies to master.
-						Staying current and expanding my skill set is something I’m passionate
-						about.
+						While JavaScript is my go-to language, with a strong grasp of React and
+						Next.js, I consider myself language-agnostic and am comfortable working with
+						any programming language. I’m always on the lookout for new technologies to
+						master, and staying current while expanding my skill set is something I’m
+						passionate about.
 					</Paragraph>
 					<br />
 					<Paragraph>
 						During college, I had the opportunity to learn and work with AWS and
-						Java/Spring Boot, which has further broadened my expertise in backend
-						development and cloud services.
+						Java/Spring Boot, further broadening my expertise in backend development and
+						cloud services.
 					</Paragraph>
 					<br />
 					<Paragraph>
 						I invite you to click around and explore my website to see the projects and
-						work that I&apos;m most proud of. I hope you&apos;ll find the creativity and
-						precision in my work as exciting as I do.
+						work that I’m most proud of. I hope you’ll find the creativity and precision
+						in my work as exciting as I do.
 					</Paragraph>
-
 					<Box align="center" my={4}>
 						<NextLink href="/works">
 							<Button
@@ -137,27 +139,30 @@ const Page = () => {
 					</Box>
 				</Section>
 
-				{/* <Section delay={0.2}>
+				{/* Work Experience */}
+				<Section delay={0.3}>
 					<Heading as="h3" variant="section-title">
-						Bio
+						Experience
 					</Heading>
-					<BioSection>
-						<BioYear>1992</BioYear>
-						Born on Aguadilla, Puerto Rico
-					</BioSection>
-					<BioSection>
-						<BioYear>2010</BioYear>
-						Graduated from Pennsauken High School
-					</BioSection>
-					<BioSection>
-						<BioYear>2010-2019</BioYear>
-						Worked various jobs.
-					</BioSection>
-					<BioSection>
-						<BioYear>2019 to present</BioYear>
-						Started learning web development and started building small web apps.
-					</BioSection>
-				</Section> */}
+					<Paragraph>
+						During my Software Engineer Internship at TechnologyAdvice, I quickly
+						adapted to the company&apos;s tech stack, delivering high-impact feature
+						enhancements within the first two weeks. I was responsible for developing
+						scalable full-stack web applications using PHP/Laravel for the backend and
+						Vue.js for the frontend, leading to a 20% increase in user engagement. I
+						worked closely with product managers, UX/UI designers, and QA teams in
+						bi-weekly Agile sprints to align with business goals and ensure efficient
+						project progress.
+					</Paragraph>
+					<br />
+					<Paragraph>
+						I actively contributed to troubleshooting and testing, enhancing product
+						reliability, while documenting technical workflows and API endpoints for
+						future reference. This experience solidified my ability to deliver
+						high-quality solutions in collaborative environments and tackle blockers
+						effectively in daily standups.
+					</Paragraph>
+				</Section>
 
 				{/* Skills Section */}
 				<Section delay={0.3}>
