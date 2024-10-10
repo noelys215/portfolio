@@ -4,56 +4,52 @@ import P from '../../components/paragraph';
 import Layout from '../../components/layouts/article';
 import Section from '../../components/section';
 import Paragraph from '../../components/paragraph';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation } from 'swiper';
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
 import { Slider } from '../../components/slider';
 
 const imageArr = [
-	{ src: '/images/works/atalanta1.png', alt: 'atalanta' },
-	{ src: '/images/works/atalanta2.png', alt: 'atalanta' },
-	{ src: '/images/works/atalanta3.png', alt: 'atalanta' },
-	{ src: '/images/works/atalanta4.png', alt: 'atalanta' },
-	{ src: '/images/works/atalanta5.png', alt: 'atalanta' },
-	{ src: '/images/works/atalanta6.png', alt: 'atalanta' },
-	{ src: '/images/works/atalanta7.png', alt: 'atalanta' },
-	{ src: '/images/works/product_edit.jpg', alt: 'atalanta' },
-	{ src: '/images/works/productslist.jpg', alt: 'atalanta' },
-	{ src: '/images/works/userslist.jpg', alt: 'atalanta' },
+	{ src: '/images/works/running.gif', alt: 'atalanta' },
+	{ src: '/images/works/createAccount.png', alt: 'atalanta' },
+	{ src: '/images/works/confirmEmail.png', alt: 'atalanta' },
+	{ src: '/images/works/emailVerified.png', alt: 'atalanta' },
+	{ src: '/images/works/login.png', alt: 'atalanta' },
+	{ src: '/images/works/shopping.png', alt: 'atalanta' },
+	{ src: '/images/works/addCart.png', alt: 'atalanta' },
+	{ src: '/images/works/payment.png', alt: 'atalanta' },
+	{ src: '/images/works/orderPaid.png', alt: 'atalanta' },
+	{ src: '/images/works/orderConfirm.png', alt: 'atalanta' },
 ];
 
 const Work = () => (
 	<Layout title="Atalanta A.C.">
 		<Container maxW="3xl">
 			<Title>
-				Atalanta A.C. <Badge>2022</Badge>
+				Atalanta A.C. <Badge>2024</Badge>
 			</Title>
 			<List ml={4} my={4}>
 				<ListItem>
 					<Meta>Stack</Meta>
 					<span>
-						NextJs | JavaScript | TypeScript | Node/Express | MongoDB/Atlas | PayPal
-						<br /> Material UI | Redux Toolkit | Docker | AWS EC2
+						React | TypeScript | Vite | Material UI | Redux Toolkit | AWS | Stripe |
+						Docker | Laravel
 					</span>
 				</ListItem>
 				<ListItem>
 					<Meta>Visit</Meta>
-					<Link href="https://atalanta-frontend.vercel.app/" target={'_blank'}>
+					<Link href="https://www.atalanta.world" target={'_blank'}>
 						Atalanta A.C.
 					</Link>
 				</ListItem>
 				<ListItem>
 					<Meta>Frontend Code</Meta>
-					<Link href="https://github.com/noelys215/atalanta_frontend" target={'_blank'}>
+					<Link
+						href="https://github.com/noelys215/atalanta_frontend_ii/"
+						target={'_blank'}>
 						GitHub - Atalanta A.C. | Frontend
 					</Link>
 				</ListItem>
 				<ListItem>
 					<Meta>Backend Code</Meta>
-					<Link href="https://github.com/noelys215/atalanta_backend" target={'_blank'}>
+					<Link href="https://github.com/noelys215/atalanta_laravel" target={'_blank'}>
 						GitHub - Atalanta A.C. | Backend
 					</Link>
 				</ListItem>
@@ -61,75 +57,63 @@ const Work = () => (
 
 			<Section delay={0.1}>
 				<Heading as="h4" fontSize={16} my={6}>
-					<Center>README</Center>
+					<Center>Project Overview</Center>
 				</Heading>
 				<Paragraph>
-					Atalanta A.C. (Athletic Club) is an ambitious attempt to create a complete
-					modern e-commerce clothing and accessory store for athletes; with user
-					authentication.
-					<br />
-					<br />
-					Backend:
-					<br />
-					- The backend is built on Node.js with the express framework connected to the
-					MongoDB Atlas cloud which collects, registers and updates the data on users,
-					products, and orders.
-					<br />
-					- This includes an admin protected route that can access sensitive information
-					on users as well create/edit products, edit user info, and mark orders as
-					shipped.
-					<br />
-					- Moreover, Using Cloudinary&apos;s SDK, images and videos are uploaded to its
-					cloud servers, rather than being stored in the production code.
-					<br />
-					<br />
-					Frontend:
-					<br />
-					- The frontend is built on Next.js, a React framework, using its various
-					pre-rendering techniques to render the HTML in advance on a server, instead dof
-					having it done on the client side, avoiding blank loading pages.
-					<br />
-					- The application uses ISR (Incremental Static Regeneration) so data is readily
-					available on build time, and only gets regenerated when the backend is updated;
-					in the case of sales, price markdowns, and other content updates.
-					<br />- Redux Toolkit is used to handle state within the app as well as create
-					synchronous and asynchronous actions to the express backend such as
-					creating/placing orders, users, retrieving data and more.
-					<br />
-					<br />
-					Hosting:
-					<br />
-					*CURRENTlY BEING REWORKED AS OF 1/2024*
-					<br />
-					- The application practices the CI/CD method to deploy any changes to the AWS
-					ec2 instance in the cloud.
-					<br />
-					- With Github Actions, the Dockerfile runs Next.js build script, and if the
-					build completes without error, the script proceeds to run a docker build script
-					in the AWS EC2 shell, which pulls the latest docker image and runs on the
-					server.
-					<br />- Redux Toolkit is used to handle state within the app as well as create
-					synchronous and asynchronous actions to the express backend such as
-					creating/placing orders, users, retrieving data and more.
+					Atalanta A.C. is a sportswear platform offering cutting-edge products and a
+					sleek, seamless shopping experience. It allows users to browse and purchase
+					items, create accounts to track orders, or opt for guest checkout with order
+					tracking via email. Built with React and Laravel, the application provides
+					secure payments via Stripe and real-time order management.
 				</Paragraph>
 			</Section>
 
 			<Section delay={0.1}>
 				<Heading as="h4" fontSize={16} my={6}>
-					<Center>Room for Improvements</Center>
+					<Center>Key Features</Center>
 				</Heading>
 				<Paragraph>
-					Atalanta is a learning project, used to learn and practice new technologies and
-					concepts.
-					<br />
-					In future updates, the website will include SMS and Email confirmations, support
-					chatbot,as well as a simpler checkout system.
-					<br />
+					<br />- Account Creation & Order Tracking: Users can create accounts or track
+					orders via guest checkout using email.
+					<br />- Secure Payments via Stripe: Ensures secure and seamless payment
+					processing.
+					<br />- Responsive Design: Fully responsive UI across all devices.
+					<br />- Order Confirmation Emails: Automated emails provide users with order
+					details.
+					<br />- Cloud Hosting: Hosted on AWS, with assets managed through S3 and data
+					stored in MySQL RDS.
 				</Paragraph>
 			</Section>
 
-			{/* Image Slider */}
-			<Slider array={imageArr} />
+			<Section delay={0.1}>
+				<Heading as="h4" fontSize={16} my={6}>
+					<Center>Architecture</Center>
+				</Heading>
+				<Paragraph>
+					The application’s frontend is built with React and TypeScript, powered by Vite
+					for fast builds. The backend, built with Laravel, manages API endpoints and
+					stores data in MySQL RDS, with assets handled by AWS S3. Deployed using Docker
+					and AWS App Runner, the CI/CD pipeline ensures seamless updates via AWS ECR.
+				</Paragraph>
+			</Section>
+
+			<Section delay={0.1}>
+				<Heading as="h4" fontSize={16} my={6}>
+					<Center>Screenshots</Center>
+				</Heading>
+				<Slider array={imageArr} />
+			</Section>
+
+			<Section delay={0.1}>
+				<Heading as="h4" fontSize={16} my={6}>
+					<Center>Future Enhancements</Center>
+				</Heading>
+				<Paragraph>
+					Planned improvements include address auto-completion, enhanced CAPTCHA for
+					security, analytics integration, SMS verification, and a redesign of product
+					pages for a more luxurious aesthetic.
+				</Paragraph>
+			</Section>
 		</Container>
 	</Layout>
 );
