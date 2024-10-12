@@ -18,11 +18,6 @@ const Works = () => (
 
 			<SimpleGrid columns={[1, 1, 2]} gap={6}>
 				<Section>
-					<WorkGridItem id="gloriafutbol" title="Gloria Fútbol" thumbnail={gloriaThumb}>
-						Simple soccer/futbol app with live scores,charts and tables.
-					</WorkGridItem>
-				</Section>
-				<Section>
 					<WorkGridItem id="atalanta" title="Atalanta A.C." thumbnail={atalantaThumb}>
 						A semi-modern athletic clothing e-commerce store.
 					</WorkGridItem>
@@ -32,6 +27,12 @@ const Works = () => (
 						A companion app for the Stronger by Science weightlifting program.
 					</WorkGridItem>
 				</Section>
+				<Section>
+					<WorkGridItem id="gloriafutbol" title="Gloria Fútbol" thumbnail={gloriaThumb}>
+						Simple soccer/futbol app with live scores,charts and tables.
+					</WorkGridItem>
+				</Section>
+				<Section />
 				<Section>
 					<GridItem
 						href="https://spock-game.vercel.app/"
