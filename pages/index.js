@@ -22,7 +22,7 @@ import { WorkGridItem } from '../components/grid-item';
 
 import { IoMailOutline, IoLogoGithub } from 'react-icons/io5';
 import thumbGloria from '../public/images/gloria.png';
-import thumbAtalanta from '../public/images/atalanta.png';
+import thumbAtalanta from '../public/images/works/atalanta1.png';
 // Google Analytics
 import ReactGA from 'react-ga';
 import { useEffect } from 'react';
